@@ -6,7 +6,7 @@ from .models import stud1
 def page1(request):
     return HttpResponse("HELLO ALL")
 def page2(request):
-    return HttpResponse("GOOD MORNING")
+    return HttpResponse("GOOD KNIGHT")
 def html_page(request):
     return render(request, "first.html")
 def p2(request):
