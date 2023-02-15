@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+DATA:-
+    <form action="" method="POST">
+        {% csrf_token %}
+        <label>Enter The Name = </label>
+            <input type="text" name="n"/>
+        <label>Enter The address = </label>
+            <input type="text" name="a"/>
+        <input type="submit" value="Post">
+    </form>
+
+ <table border="1">
+      <tr>
+         <th>name</th>
+          <th>adderess</th>
+
+      </tr>
+        {% for x in k1 %}
+      <tr>
+          <td>{{x.name}}</td>
+          <td>{{x.address}}</td>
+
+      </tr>
+         {% endfor %}
+
+
+
+  </table>
+
+
+</body>
+</html>
