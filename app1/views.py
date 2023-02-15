@@ -4,7 +4,7 @@ from django.http import HttpResponse
 from .models import stud1
 # Create your views here.
 def page1(request):
-    return HttpResponse("HELLO WORLD")
+    return HttpResponse("HELLO ALL")
 def page2(request):
     return HttpResponse("GOOD MORNING")
 def html_page(request):
